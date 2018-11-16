@@ -5,7 +5,10 @@ ADR 지표 정보 사이트 주소가 변경되었습니다.<br>
 5초 후에 자동으로 이동합니다.
 
 <script>
-window.location.href = 'http://adrinfo.kr';
+function leave() {
+  window.location.href = 'http://adrinfo.kr';
+}
+setTimeout('leave()', 5000);
 </script> 
 </body>
 </html>
